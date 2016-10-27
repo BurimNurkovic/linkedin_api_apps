@@ -1,0 +1,26 @@
+# Only gem-specific ignores are included in this file.
+# For common .gitignore items, you should set your local ~/.gitignore
+
+# We want to ignore Gemfile.lock for gems. See http://yehudakatz.com/2010/12/16/clarifying-the-roles-of-the-gemspec-and-gemfile/
+Gemfile.lock
+.Gemfile
+
+# Use your own ~/.rspec
+# See suggested options in Rakefile
+.rspec
+
+# We do not want to lock a ruby version or gemeset to develop on
+.rvmrc
+.ruby-gemset
+.ruby-version
+
+# Compile yarddoc with the `yard` command
+.yardoc
+doc/
+
+# Run `rake build` to generate the gem
+/*.gem
+pkg/
+
+# Running coveralls
+coverage
